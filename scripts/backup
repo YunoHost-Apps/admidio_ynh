@@ -26,9 +26,7 @@ ynh_backup "$data_dir"
 
 # Backup the NGINX configuration
 ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
-
-# Backup the systemd service unit
-ynh_backup "/etc/systemd/system/$app.service"
+ynh_backup "/etc/php/$php_version/fpm/pool.d/$app.conf"
 
 # Backup the logrotate configuration
 ynh_backup "/etc/logrotate.d/$app"
