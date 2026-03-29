@@ -14,13 +14,13 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="adm_my_files adm_plugins themes"
 
-chown -R "$app:$app" "$install_dir"
-chmod -R 750  "$install_dir/adm_my_files"
-#=================================================
-# UPDATE A CONFIG FILE
-#=================================================
 
-ynh_config_add --template="papra.config.yaml" --destination="$install_dir/apps/papra-server/papra.config.yaml"
+#=================================================
+# INSTALL COMPOSER DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing composer dependencies..."
+
+ynh_composer_exec install --no-dev
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATION
@@ -29,16 +29,7 @@ ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
 
-ynh_config_add_systemd
-
-yunohost service add "$app" --description="Papra Docs" --log="/var/log/$app/$app.log"
-
-#=================================================
-# START SYSTEMD SERVICE
-#=================================================
-ynh_script_progression "Starting $app's systemd service..."
-
-ynh_systemctl --service="$app" --action="start"
+ynh_config_add_phpfpm
 
 #=================================================
 # END OF SCRIPT
