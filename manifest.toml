@@ -25,7 +25,7 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "2000M"
+disk = "1000M"
 ram.build = "1500M"
 ram.runtime = "500M"
 
@@ -41,13 +41,6 @@ ram.runtime = "500M"
     type = "string"
     ask.en = "Email from"
     default = "no-reply"
-
-    [install.language]
-    ask.en = "Choose the OCR language"
-    ask.fr = "Choisissez la langue pour l'OCR"
-    type = "select"
-    choices = ["fra", "cat", "dan", "deu", "eng", "eus", "fin", "glg", "ita", "nld", "nor", "pol", "port", "ron", "rus", "spa", "slv", "tur", "ukr"]
-    default = "fra"
 
 [resources]
     [resources.sources]
