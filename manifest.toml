@@ -14,7 +14,7 @@ license = "GPL-2.0-only"
 website = "https://www.admidio.org/"
 demo = "https://www.admidio.org/demo/system/login.php"
 admindoc = "https://www.admidio.org/dokuwiki/doku.php?id=en:2.0:index"
-code = "https://github.com/papra-hq/papra"
+code = "https://github.com/Admidio/admidio"
 
 [integration]
 yunohost = ">= 12.1.39"
