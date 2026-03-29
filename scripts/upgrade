@@ -12,7 +12,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="adm_my_files"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="adm_my_files adm_plugins themes"
 
 chown -R "$app:$app" "$install_dir"
 chmod -R 750  "$install_dir/adm_my_files"
