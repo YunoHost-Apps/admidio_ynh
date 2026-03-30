@@ -60,7 +60,7 @@ ram.runtime = "500M"
 
     [resources.apt]
     packages = [
-        "postgresql",
+        "mariadb-server",
         "redis-server",
         "imagemagick",
         "php-pear",
@@ -90,7 +90,7 @@ ram.runtime = "500M"
     ]
    
     [resources.database]
-    type = "postgresql"
+    type = "mysql"
     
     [resources.composer]
     version = "2.9.3"
