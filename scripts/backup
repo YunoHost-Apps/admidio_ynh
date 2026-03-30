@@ -40,7 +40,7 @@ ynh_backup "$install_dir"
 # BACKUP THE DATABASE
 #=================================================
 
-ynh_psql_dump_db > db.sql
+ynh_mysql_dump_db > db.sql
 
 #=================================================
 # BACKUP SYSTEM CONFIGURATION
