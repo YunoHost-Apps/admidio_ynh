@@ -1,5 +1,5 @@
 ### DATABASE
-Database system: postgresql  
+Database system: mysql-mariadb  
 Host : `localhost`  
 Database Name : `__DB_NAME__` 
 Username: `__DB_USER__` 
