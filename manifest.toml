@@ -4,7 +4,7 @@ packaging_format = 2
 id = "admidio"
 name = "Admidio"
 description.en = "Management system for websites of organizations and groups"
-description.fr = "Management system for websites of organizations and groups"
+description.fr = "Application de gestion des membres d'une association, d'un groupe ou d'une organisation"
 version = "5.0.8~ynh1"
 
 maintainers = ["otm33GH"]
@@ -60,7 +60,7 @@ ram.runtime = "500M"
 
     [resources.apt]
     packages = [
-        "postgresql",
+        "mariadb-server",
         "redis-server",
         "imagemagick",
         "php-pear",
@@ -90,7 +90,7 @@ ram.runtime = "500M"
     ]
    
     [resources.database]
-    type = "postgresql"
+    type = "mysql"
     
     [resources.composer]
     version = "2.9.3"

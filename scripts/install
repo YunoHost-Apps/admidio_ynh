@@ -31,14 +31,14 @@ popd
 
 #=================================================
 # SET PERMISSIONS
-#=================================================
+#================================================
 
 #pushd "$install_dir"
 #chmod -R 750 ./adm_my_files
 #popd
 
-ln -s "$data_dir" "$install_dir/adm_my_files"
-chmod 600 "$data_dir/config.php"
+ln -s "$data_dir" "$install_dir/adm_my_files/photos"
+
 
 
 #=================================================
