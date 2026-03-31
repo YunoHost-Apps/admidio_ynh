@@ -1,1 +1,1 @@
-
+Admidio is a free online membership management, which is optimized for associations, groups and organizations. In addition to classic user management it consists of a variety of modules that can be installed and adjusted on a new or existing homepage.
