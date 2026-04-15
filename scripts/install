@@ -34,6 +34,7 @@ popd
 #================================================
 
 ln -s "$data_dir" "$install_dir/adm_my_files/photos"
+ln -s "$data_dir" "$install_dir/adm_my_files/documents_monorg"
 
 #=================================================
 # SYSTEM CONFIGURATION
