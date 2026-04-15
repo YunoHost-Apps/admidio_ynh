@@ -33,8 +33,8 @@ popd
 # SET PERMISSIONS
 #================================================
 
-ln -s "$data_dir" "$install_dir/adm_my_files/photos"
-ln -s "$data_dir" "$install_dir/adm_my_files/documents_monorg"
+ln -s "$data_dir/photos" "$install_dir/adm_my_files/photos"
+ln -s "$data_dir/documents" "$install_dir/adm_my_files/documents_monorg"
 
 #=================================================
 # SYSTEM CONFIGURATION
