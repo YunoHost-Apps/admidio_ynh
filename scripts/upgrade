@@ -13,15 +13,13 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="adm_my_files adm_plugins themes"
 
-
 #=================================================
 # INSTALL COMPOSER DEPENDENCIES
 #=================================================
-
 ynh_script_progression "Installing composer dependencies..."
-pushd "$install_dir"
 
-ynh_composer_exec install --no-dev
+pushd "$install_dir"
+	ynh_composer_exec install --no-dev
 popd
 
 #=================================================
