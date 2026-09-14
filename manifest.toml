@@ -17,7 +17,7 @@ admindoc = "https://www.admidio.org/dokuwiki/doku.php?id=en:2.0:index"
 code = "https://github.com/Admidio/admidio"
 
 [integration]
-yunohost = ">= 12.1.39"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -70,28 +70,27 @@ ram.runtime = "200M"
         "imagemagick",
         "php-pear",
         "php-db",
-        "php8.4-uploadprogress",
+        "php8.5-uploadprogress",
         "php-xmlrpc",
-        "php8.4-apcu",
-        "php8.4-bcmath",
-        "php8.4-bz2",
-        "php8.4-curl",
-        "php8.4-fpm",
-        "php8.4-gd",
-        "php8.4-gmp",
-        "php8.4-igbinary",
-        "php8.4-imagick",
-        "php8.4-imap",
-        "php8.4-intl",
-        "php8.4-ldap",
-        "php8.4-mbstring",
-        "php8.4-redis",
-        "php8.4-soap",
-        "php8.4-tidy",
-        "php8.4-xmlrpc",
-        "php8.4-xml",
-        "php8.4-zip",
-        "php8.4-mysql",
+        "php8.5-apcu",
+        "php8.5-bcmath",
+        "php8.5-bz2",
+        "php8.5-curl",
+        "php8.5-gd",
+        "php8.5-gmp",
+        "php8.5-igbinary",
+        "php8.5-imagick",
+        "php8.5-imap",
+        "php8.5-intl",
+        "php8.5-ldap",
+        "php8.5-mbstring",
+        "php8.5-redis",
+        "php8.5-soap",
+        "php8.5-tidy",
+        "php8.5-xmlrpc",
+        "php8.5-xml",
+        "php8.5-zip",
+        "php8.5-mysql",
         
     ]
    
@@ -99,4 +98,4 @@ ram.runtime = "200M"
     type = "mysql"
     
     [resources.composer]
-    version = "2.9.3"
+    version = "2.10.2"
