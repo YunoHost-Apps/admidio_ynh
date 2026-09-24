@@ -17,7 +17,7 @@ admindoc = "https://www.admidio.org/dokuwiki/doku.php?id=en:2.0:index"
 code = "https://github.com/Admidio/admidio"
 
 [integration]
-yunohost = ">= 12.1.39"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -99,4 +99,4 @@ ram.runtime = "200M"
     type = "mysql"
     
     [resources.composer]
-    version = "2.9.3"
+    version = "2.10.3"
