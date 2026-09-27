@@ -5,7 +5,7 @@ id = "admidio"
 name = "Admidio"
 description.en = "Management system for websites of organizations and groups"
 description.fr = "Application de gestion des membres d'une association, d'un groupe ou d'une organisation"
-version = "5.0.15~ynh1"
+version = "5.0.16~ynh1"
 
 maintainers = ["otm33GH"]
 
@@ -45,8 +45,8 @@ ram.runtime = "200M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/Admidio/admidio/archive/refs/tags/v5.0.15.tar.gz"
-    sha256 = "e7d38eee36de8fe8c76609d4eedd886c4a586394fb738ce7174ddafac1664232"
+    url = "https://github.com/Admidio/admidio/archive/refs/tags/v5.0.16.tar.gz"
+    sha256 = "043a55e67dcd4d147bcb7b326605f240792dd9392e9c8abc4105ab9b67a796c9"
     autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
@@ -98,4 +98,4 @@ ram.runtime = "200M"
     type = "mysql"
     
     [resources.composer]
-    version = "2.10.2"
+    version = "2.10.3"
